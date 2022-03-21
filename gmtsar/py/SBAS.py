@@ -888,8 +888,7 @@ class SBAS:
 
         # extract dates from pair
         date1, date2 = pair
-
-        basename = os.path.join(self.basedir, f'{date1}_{date2}_').replace('-','')
+        basename = os.path.join(self.basedir, f'{date1}_{date2}_'.replace('-',''))
         #print ('basename', basename)
 
         # invalid pixels mask
