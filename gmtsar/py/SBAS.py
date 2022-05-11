@@ -192,7 +192,8 @@ class SBAS:
             
             elevation.clip(bounds=(llmin, ltmin, llmax, ltmax),
                             product=product,
-                            margin='0.01', 
+                            margin='0.01',
+                            cache_dir='/tmp/', 
                             output=os.path.realpath(tif_filename))
             #elevation.clean()
 
